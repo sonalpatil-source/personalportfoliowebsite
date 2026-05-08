@@ -37,6 +37,9 @@ The goal of this project is to:
 - Serve as a personal developer portfolio
 
 ---
+##Live Demo
+https://sonalpatil-source.github.io/PersonalPortfolioWebsite/
+---
 
 ## Note
 
