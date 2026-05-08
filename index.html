@@ -4,120 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonal Patil | Portfolio</title>
-
-    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <h2 class="logo">Sonal Patil</h2>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-        <h2 class="logo">MyPortfolio</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</ahref></li>
-            <li><a href="#contact">Contact</a></li>
+    <section class="hero">
+        <h1>Hello, I'm Sonal Patil</h1>
+        <p class="typing" id="typing"></p>
+        <p class="hero-subtitle">Building the future, one line of code at a time.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Bachelor of Engineering (BE) student in Computer Engineering, driven by curiosity and innovation. 
+        Committed to learning, adapting, and building a strong foundation for a future in tech.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Flutter (Basic)</li>
+            <li>MY SQL</li>
+            <li>Python</li>
+            <li>java</li>
+            <li>VB.Net</li>
         </ul>
-    </nav>
-</header>
 
-<section class="hero">
-    <h1>Hello, I'm Sonal Patil</h1>
-    <p>Tech Enthusiastic</p>
-    
-</section>
+        <h2>Extracurricular Skills</h2>
+        <ul class="skills-list">
+            <li>Communication</li>
+            <li>Creativity</li>
+            <li>Video Creation & Editing</li>
+            <li>Team Leadership</li>
+        </ul>
+    </section>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        Bachelor of Engineering (BE) student in Computer Engineering, driven by curiosity and innovation.
-Committed to learning, adapting, and building a strong foundation for a future in tech.
-    </p>
-</section>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+                <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio.</p>
+            </div>
+                <div class="project-card">
+                <h3>To-Do List App</h3>
+                <p>A simple task manager.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <ul class="skills-list">
-        <li>HTML,CSS,Javascript</li>
-        <li>Flutter (Basic)</li>
-    </ul>
-    <h2>Extracurricular Skills</h2>
-    <ul class="skills-list">
-        <li>Communication</li>
-        <li>Creativity</li>
-        <li>Video Creation,Editing</li>
-    </ul>
-</section>
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="edu-card">
+            <h3>Bachelor of Engineering (BE) - Computer Engineering</h3>
+            <p>Trinity College of Engineering and Research, Pune</p>
+            <p>2025-2028 | Currently Pursuing</p>
+        </div>
+        <div class="edu-card">
+            <h3>Diploma in Computer Science and Engineering</h3>
+            <p>Sanjay Ghodawat Institute, Kolhapur</p>
+            <p>2022-2025 | Completed</p>
+        </div>
+    </section>
 
-<section id="projects" class="section">
-    <h2>Projects</h2>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to connect with me:</p>
+        <p>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/sonalpatil-source" target="_blank">GitHub</a> |
+            <a href="mailto:sonalsmita.patil@gmail.com">Email</a>
+        </p>
+    </section>
 
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio.</p>
+    <footer>
+        <p>© 2026 Sonal Patil. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <button onclick="closeModal()">Close</button>
+        </div>
     </div>
 
-    <div class="project-card">
-        <h3>To-Do List App</h3>
-        <p>A simple task manager.</p>
-    </div>
-
-</section>
-<section id="education" class="section">
-    <h2>Education</h2>
-
-    <div class="edu-card">
-        <h3>Bachelor of Engineering (BE) - Computer Engineering</h3>
-        <p>Trinity College of Engineering and Research,Pune</p>
-        <p>2025-2028</p>
-        <p>Currently Pursuing</p>
-    </div>
-
-    <div class="edu-card">
-        <h3>Diploma in Computer Science and Engineering</h3>
-        <p>Sanjay Ghodawat Institute,Kolhapur</p>
-        <p>2022-2025</p>
-        <p>Completed</p>
-    </div>
-</section>
-
-<!--<section id="contact" class="section">
-    <h2>Contact Me</h2>
-
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-
-    <p id="successMessage"></p>
-
-    <p>
-        <a href="#">LinkedIn</a> |
-        <a href="#">GitHub</a>
-    </p>
-</section>-->
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Feel free to connect with me:</p>
-
-    <p>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/sonalpatil-source" target="_blank">GitHub</a> |
-        <a href="mailto:sonalsmita.patil@gmail.com">Email</a>
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 Sonal Patil. All rights reserved.</p>
-</footer>
-
-<!-- JS Link -->
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
